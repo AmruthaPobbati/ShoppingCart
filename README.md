@@ -13,6 +13,7 @@ GUIDELINES TO RUN PROJECT:
 ●	Update the maven dependencies to download all the required libraries.
 ●	Run the project, select Run on Server Option.
 
+SCRIPT FILE PATH : ShoppingCart/src/main/webapp/WEB-INF/resources/scripts/db.sql
 
 NOTE: If any errors regarding contextLoadListener, please do following steps:
 
