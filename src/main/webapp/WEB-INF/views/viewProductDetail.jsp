@@ -22,16 +22,18 @@
 					
 					<br>
 					
-					<c:set var="role" scope="page" value="${param.role}" />
                     <c:set var="url" scope="page" value="/product/productList/all" />
-                    <c:if test="${role='admin'}">
+                    <c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
                         <c:set var="url" scope="page" value="/admin/productInventory" />
                     </c:if>
 					
 					<p ng-controller="cartCtrl">
 						<a href="<c:url value="${url}"/>" class="btn btn-default">Back</a>
-						<a href="#" class="btn btn-large btn-warning" ng-click="addToCart('${product.id }')"><span class="glyphicon glyphicon-shopping-cart"></span>Add To Cart</a>
-						<a href="<c:url value="/customer/cart"/>" class="btn btn-default">View Cart</a>
+						<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
+						
+							<a href="#" class="btn btn-large btn-warning" ng-click="addToCart('${product.id }')"><span class="glyphicon glyphicon-shopping-cart"></span>Add To Cart</a>
+							<a href="<c:url value="/customer/cart"/>" class="btn btn-default">View Cart</a>
+						</c:if>
 					</p>
 				</div>
 			</div>
