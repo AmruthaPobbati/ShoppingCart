@@ -107,7 +107,7 @@
         </div>
 
         <br><br>
-        <input type="submit" value="submit" class="btn btn-default">
+        <input type="submit" value="submit" class="btn btn-primary">
         <a href="<c:url value="/" />" class="btn btn-default">Cancel</a>
 
 		</form:form>	
