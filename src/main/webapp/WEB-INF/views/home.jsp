@@ -32,7 +32,7 @@
 					alt="Second slide">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Start with Browsing</h1>
+						<h1>Start Browsing</h1>
 
 						<p>Lose yourself in the music...</p>
 
@@ -45,7 +45,7 @@
 					alt="Third slide">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>End with Buying</h1>
+						<h1>End Buying</h1>
 
 						<p>No Music..No Life..Know Music..Know Life</p>
 					</div>
